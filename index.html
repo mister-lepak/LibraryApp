@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h2 class="ui center aligned icon header">
+    <i class="leanpub icon"></i>
+    My Library
+    <div>
+      <button class="ui inverted button" id="addButton">Add Book!</button>
+    </div>
+  </h2>
+  <div class="ui small modal">
+    <i class="close icon"></i>
+    <div class="header">
+      Please input the book's information below!
+    </div>
+    <div class="content">
+      <form class="ui form">
+        <div class="field" id="titleField">
+          <label>Book Title</label>
+          <input type="text" id="bookTitle" placeholder="Book Title" >
+        </div>
+        <div class="field" id="authorField">
+          <label>Author</label>
+          <input type="text" id="author" placeholder="Author Name">
+        </div>
+        <div class="field" id="pagesField">
+          <label>Pages</label>
+          <input type="text" id="pages" placeholder="Number of Pages">
+        </div>
+        <div class="field" id="readField">
+          <label>Read?</label>
+          <input type="checkbox" tabindex="0" id="readY">
+        </div>
+      </form>
+    </div>
+    <div class="actions">
+      <button class="ui button" type="submit" id="newBookButton">Submit</button>
+    </div>
+  </div>
+  <div class="ui stackable three column grid"></div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
