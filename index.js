@@ -149,6 +149,10 @@ $(addButton).on("click", () => {
     $('.ui.modal').modal('show');
 });
 
+$(addButton).on("vclick", () => {
+  $('.ui.modal').modal('show');
+});
+
 // closeIcon.addEventListener('click', () => {
 //   $('.ui.modal').modal('hide');
 // });
