@@ -87,7 +87,7 @@ let populateItem = (title, author, pages, read, key) => {
   formCardContent.appendChild(formCardContentAuthor);
   let formCardContentPages = document.createElement('div');
   formCardContentPages.classList.add('summary');
-  formCardContentPages.innerText = pages;
+  formCardContentPages.innerText = `${pages} pages`;
   formCardContent.appendChild(formCardContentPages);
   let formCardContentRead = document.createElement('div');
   formCardContentRead.classList.add('summary');
@@ -165,7 +165,7 @@ newBookButton.addEventListener('click', () => {
       proceed = false;
     }
   });
-  if (!(/[0-9]+/g.test(pages.value))) {
+  if (!(/^\d+$/g.test(pages.value))) {
     document.querySelector(itemsMap['#pages']).classList.add('error');
     proceed = false;
   } else {
