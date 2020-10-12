@@ -141,13 +141,22 @@ let populateItem = (title, author, pages, read, key) => {
   document.querySelector('.ui.stackable.three.column.grid').appendChild(formCardCol);
 };
 
-addButton.addEventListener("click", () => {
-  $('.ui.modal').modal('show');
+// addButton.addEventListener("click", () => {
+//   $('.ui.modal').modal('show');
+// });
+
+$(addButton).on("click", () => {
+    $('.ui.modal').modal('show');
 });
 
-closeIcon.addEventListener('click', () => {
+// closeIcon.addEventListener('click', () => {
+//   $('.ui.modal').modal('hide');
+// });
+
+$(closeIcon).on("click", () => {
   $('.ui.modal').modal('hide');
 });
+
 
 newBookButton.addEventListener('click', () => {
   itemsMap = {
